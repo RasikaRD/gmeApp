@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:roll_dies/screens/rollDies/image_screen.dart';
-import 'package:roll_dies/screens/quiz/quiz_screen.dart';
+import 'package:roll_dies/screens/quiz/quiz.dart';
 import 'package:roll_dies/widgets/gradient_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -29,6 +29,11 @@ class HomeScreen extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>   QuizeScreen(() {
+                        
+                      }),
+                    ));
                   },
                   child: const SizedBox(
                     child: GradientWidget(Color.fromARGB(255, 80, 9, 102),

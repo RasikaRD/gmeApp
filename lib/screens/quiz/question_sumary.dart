@@ -37,8 +37,8 @@ class QuestionSummary extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(5.0),
-                    child: SizedBox(width: 250,
+                    padding: const EdgeInsets.all(8.0),
+                    child: SizedBox(width: 300,
                       child: Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,24 +47,23 @@ class QuestionSummary extends StatelessWidget {
                               data['question'] as String,
                               textAlign: TextAlign.left,
                               style: const TextStyle(
-                                fontSize: 14,
+                                fontSize: 18,
                                 fontWeight: FontWeight.w500,
                                 color: Color.fromARGB(255, 8, 46, 46),
                               ),
                             ),
                            
-                            Text(
-                              data['user_answers'] as String,
+                            Text('Your Answer : ${data['user_answers'] as String}',
                               style: const TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w400,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
                                 color: Color.fromARGB(255, 81, 147, 201),
                               ),
                             ),
-                            Text(data['correct_answer'] as String,
+                            Text('Correct Answer : ${data['correct_answer'] as String}',
                                 style: const TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w300,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
                                   color: Color.fromARGB(255, 201, 204, 39),
                                 )),
                           ],

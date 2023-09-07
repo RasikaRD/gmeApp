@@ -31,7 +31,7 @@ class AnswerButton extends StatelessWidget {
         ),
         child: Text(answerText,
             textAlign: TextAlign.center,
-            style: GoogleFonts.lato(fontSize: 16, fontWeight: FontWeight.w300)),
+            style: GoogleFonts.actor(fontSize: 18, fontWeight: FontWeight.w100)),
       ),
     );
   }

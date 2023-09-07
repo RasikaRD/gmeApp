@@ -51,7 +51,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
           Text(
             currentQuestion.text,
             textAlign: TextAlign.center,
-            style: GoogleFonts.lato(color: Colors.white, fontSize: 18),
+            style: GoogleFonts.lato(color: Colors.white, fontSize: 22),
           ),
           const SizedBox(
             height: 20,
@@ -63,20 +63,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   answerQuestion(answer);
                 });
           }),
-          const SizedBox(
-            height: 20,
-          ),
-          // TextButton.icon(
-          //     style: TextButton.styleFrom(
-          //         foregroundColor: const Color.fromARGB(255, 0, 0, 0)),
-          //     icon: const Icon(Icons.arrow_forward_outlined),
-          //     onPressed: answerQuestion,
-          //     label: Text(
-          //       nextText,
-          //       style: const TextStyle(
-          //         fontSize: 18,
-          //       ),
-          //     ))
+
         ],
       ),
     );
